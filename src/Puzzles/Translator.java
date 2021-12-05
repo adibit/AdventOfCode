@@ -61,7 +61,11 @@ public class Translator {
                 .mapToDouble(a -> a)
                 .sum();
 
+        double sumaim = sub.getSubaim().stream()
+                .mapToDouble(a -> a)
+                .sum();
         System.out.println(sum1);
         System.out.println(sum * sum1);
+        System.out.println(sumaim);
     }
 }

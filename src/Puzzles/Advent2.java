@@ -53,11 +53,5 @@ public class Advent2 {
 
         translator.commandTranslation(moveDirectionList, codesample);
 
-            /*  patternString: Search pattern to find commands and values. While values are optional.
-
-            / Regex for Group 1: "Any valid command"(variable command). Retrieved from the InputValidator Hashmap containing all commands.
-            / Regex for Group 2: Check if there is a space followed by any number of digits. Group 2 is optional.
-            */
-
     }
 }
