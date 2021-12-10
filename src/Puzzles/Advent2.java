@@ -34,7 +34,7 @@ public class Advent2 {
         Translator translator = new Translator();
 
         //TEXT IO - TAKE INPUT AND SAVE IT INTO AN ARRAYLIST
-        File input = new File("/Users/adrianleonhard/Downloads/input (1).txt");
+        File input = new File("/Users/adrianleonhard/Downloads/input.txt");
         Scanner reader = new Scanner(input);
         ArrayList<String> codesample = new ArrayList<>();
         while (reader.hasNextLine()) {

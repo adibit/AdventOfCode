@@ -49,13 +49,15 @@ public class Translator {
             sub.move(commandandvaluelist);
 
         }
-        System.out.println(sub.getSubx());
-        System.out.println(sub.getSuby());
+        System.out.println(sub.getSubx() + "Sub x");
+        System.out.println(sub.getSuby() + "Sub y");
+        System.out.println(sub.getSubx().get(0) * sub.getSuby().get(0));
+        /*
         double sum = sub.getSubx().stream()
                 .mapToDouble(a -> a)
                 .sum();
 
-        System.out.println(sum);
+        System.out.println(sub.getSubx() + "Sum x");
 
         double sum1 = sub.getSuby().stream()
                 .mapToDouble(a -> a)
@@ -64,8 +66,12 @@ public class Translator {
         double sumaim = sub.getSubaim().stream()
                 .mapToDouble(a -> a)
                 .sum();
-        System.out.println(sum1);
-        System.out.println(sum * sum1);
-        System.out.println(sumaim);
+
+
+        System.out.println(sub.getSuby() + "Sum y");
+        System.out.println(sum * sum1 + "x * y");
+
+         */
+        System.out.println(sub.getSubaim() +"Sum aim");
     }
 }

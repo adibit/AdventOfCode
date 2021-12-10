@@ -1,9 +1,6 @@
 package Puzzles;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Submarine {
@@ -29,22 +26,18 @@ public class Submarine {
 
     for (Map.Entry<String, Integer> entry: commandandvaluelist.entrySet()){
         if (entry.getKey().equals(Advent2.MoveDirection.FORWARD.getCommand())){
-            subx.add(entry.getValue());
-            subaim.add(entry.getValue());
-
+            subx.set(0, subx.get(0) + entry.getValue());
+            suby.set(0, suby.get(0) + (entry.getValue() * subaim.get(0)));
         }
         if (entry.getKey().equals(Advent2.MoveDirection.DOWN.getCommand())){
-            suby.add(entry.getValue());
-            subaim.add(entry.getValue());
+            //suby.set(0, suby.get(0) + entry.getValue());
+            subaim.set(0, subaim.get(0) + entry.getValue());
         }
         if(entry.getKey().equals(Advent2.MoveDirection.UP.getCommand())){
-            suby.add(- entry.getValue());
-            subaim.add(- entry.getValue());
+            //suby.set(0, suby.get(0) - entry.getValue());
+            subaim.set(0, subaim.get(0) - entry.getValue());
         }
-    //Challenge 2
-        if (entry.getKey().equals(Advent2.MoveDirection.FORWARD.getCommand())){
 
-        }
 
 
 
